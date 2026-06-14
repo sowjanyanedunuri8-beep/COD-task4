@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Poll Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🗳️ Poll Dashboard</h1>
+
+    <h2>Which Programming Language Do You Prefer?</h2>
+
+    <button onclick="vote('js')">
+        JavaScript
+    </button>
+
+    <button onclick="vote('python')">
+        Python
+    </button>
+
+    <button onclick="vote('java')">
+        Java
+    </button>
+
+    <hr>
+
+    <h3>Results</h3>
+
+    <p>JavaScript: <span id="jsVotes">0</span></p>
+
+    <div class="bar">
+        <div id="jsBar"></div>
+    </div>
+
+    <p>Python: <span id="pythonVotes">0</span></p>
+
+    <div class="bar">
+        <div id="pythonBar"></div>
+    </div>
+
+    <p>Java: <span id="javaVotes">0</span></p>
+
+    <div class="bar">
+        <div id="javaBar"></div>
+    </div>
+
+    <h3>Total Votes:
+        <span id="totalVotes">0</span>
+    </h3>
+
+    <button class="resetBtn"
+            onclick="resetPoll()">
+        Reset Poll
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
